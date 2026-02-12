@@ -1,31 +1,17 @@
 from numpy import *
 from sqlite3 import *
 import streamlit as st
-import mysql.connector
+from sqlalchemy import *
 list = []
 User_in = []
 
-try:
-    con = mysql.connector.connect(
-        host = "localhost",
-        user = "root",
-        password = "user",
-        database = "datab"
-    )
+con = st.connection('mysql', type='sql')
 
-    if con.is_connected():
-        print("connected to base")
-    else :
-        print("not connected ")
-    curs = con.cursor()
-    con.commit
-except:
-    print("connection issue")
+# Perform query.
+result= con.query('SELECT * from mytable;', ttl=600)
 
 
 
-curs.execute('SELECT * FROM tab')
-result = curs.fetchall()
 for i in result : 
     list.append(i)
 print(result)
