@@ -17,7 +17,7 @@ print(result)
 print(list)
 
 
-
+#
 
 def vergleich(a,b):
     a = array(a,dtype=float)
@@ -30,9 +30,12 @@ def vergleich(a,b):
     cos_similarity = test / (magnitude_A * magnitude_B)
     return cos_similarity
 
-for i in list[0]:
-    x = input()
-    User_in.append(x)
+# user interface :
+User_in.append(st.slider("Frage 1 :",1,5,3))
+
+
+
+#compere user data with database data :
 t = 0 
 for n in list:
     erg_list = list[t]
