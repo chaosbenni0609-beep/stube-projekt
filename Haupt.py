@@ -1,7 +1,6 @@
 from numpy import *
 from sqlite3 import *
 import streamlit as st
-from sqlalchemy import *
 list = []
 User_in = []
 

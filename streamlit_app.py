@@ -1,6 +1,5 @@
 
 import streamlit as st
-import sqlalchemy 
 import mysqlclient
 
 # Initialize connection.
