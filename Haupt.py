@@ -37,9 +37,14 @@ User_in.append(st.slider("Frage 1 :",1,5,3))
 
 #compere user data with database data :
 t = 0 
+best_erg = 0 
+best_index = 0 
 for n in list:
-    erg_list = list[t]
-    erg = vergleich(User_in, erg_list)
-    print(erg)
-    t =+ 1
+    erg = vergleich(User_in, list[t])
+    if erg > best_erg :
+        best_erg = erg
+        best_index = t
+    t += 1
+
+st.write(best_erg)
 
