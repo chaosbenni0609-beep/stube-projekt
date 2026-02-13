@@ -1,7 +1,6 @@
-
 import streamlit as st
-import mysqlclient as ms
-import SQlAlchemy as sa
+import mysqlclient 
+import SQlAlchemy 
 
 # Initialize connection.
 conn = st.connection('mysql', type='sql')
