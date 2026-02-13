@@ -7,7 +7,7 @@ User_in = []
 con = st.connection('mysql', type='sql')
 
 # Perform query.
-result= con.query('SELECT * from mytable;', ttl=600)
+result= con.query('SELECT * from tab;', ttl=600)
 
 
 

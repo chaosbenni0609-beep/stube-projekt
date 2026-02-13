@@ -1,6 +1,7 @@
 
 import streamlit as st
 
+results = st.slider("Frage 1 :",1,5,3)
 # Initialize connection.
 conn = st.connection('mysql', type='sql')
 
