@@ -2,16 +2,16 @@ from numpy import *
 import streamlit as st
 from random import * 
 User_in = []
-ver1 = ["A"]
-ver2 = ["B"]
-ver3 = ["C"]
-list = [ver1,ver2,ver3]
-
-for i in range(31):
-        ver1.append(randint(1,5))
-        ver2.append(randint(1,5))
-        ver3.append(randint(1,5))
-
+list = [["Maler", 1, 1, 2, 3, 1, 5, 2, 3, 2, 2, 5, 4, 2, 1, 5, 4, 2, 5, 1, 2, 1, 2, 4, 1, 1, 1, 2, 1, 5, 5, 2],
+        ["Kindergärtnerin ",1,1,5,5,2,5,3,4,2,1,2,4,4,3,2,3,2,5,2,4,2,3,4,2,1,2,3,3,4,4,2],
+        ["Innenarchitekt ",1,1,2,4,2,5,3,3,4,3,4,2,4,1,3,2,5,5,1,3,2,2,4,3,1,3,3,2,5,5,4],
+        ["Assistenz im Labor ",5,1,2,2,3,5,3,5,5,5,5,1,4,4,3,2,3,2,3,5,5,5,4,1,4,2,3,5,4,2,2],
+        ["Tierarzt ",3,1,2,4,5,3,3,5,3,3,3,4,4,2,3,1,3,4,5,4,4,2,3,1,4,1,1,1,4,3,2],
+        ["Kaufmännischer Fachwirt",1,4,3,4,4,2,2,4,4,4,3,4,4,3,3,3,4,2,3,3,3,2,3,1,1,2,3,2,2,1,3],
+        ["Handelsfachwirt/Einzelhandelskauffrau",1,1,4,4,1,5,3,4,3,4,3,4,5,2,5,5,2,5,2,5,2,4,3,3,2,2,4,3,4,3,4],
+        ["Lehrerin",2,5,4,3,2,5,4,5,2,4,4,3,4,5,4,3,2,5,3,4,5,4,4,5,5,5,5,5,4,5,5],
+        ["Betriebswitschaftslehre",3,3,1,3,1,1,2,1,3,4,2,3,4,4,2,2,3,4,2,4,3,4,3,2,4,3,3,2,2,5,3]
+        ]
 
 list_without_first = [i[1:] for i in list]
 
