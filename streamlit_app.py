@@ -73,7 +73,7 @@ for n in list:
         best_erg = erg
         best_index = t
     t += 1
-
+best_erg = list[best_index]
 st.write(best_erg)
 st.write(list[best_index])
 
