@@ -74,6 +74,6 @@ for n in list:
         best_index = t
     t += 1
 best_erg = list[best_index]
-st.write(best_erg)
+st.write(best_erg[0])
 st.write(list[best_index])
 
